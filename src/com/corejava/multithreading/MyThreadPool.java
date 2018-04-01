@@ -11,7 +11,7 @@ public class MyThreadPool {
 
         ExecutorService executorService = Executors.newFixedThreadPool(5);
 
-        for (int i=1 ;i<=10 ;i++){
+        for (int i=1 ;i<=6 ;i++){
 
             Runnable runnable = new WorkerThread(" "+i);
             executorService.execute(runnable);
